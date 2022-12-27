@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav Menu via CSS</title>
+  <style>
+    ul,
+    li {
+      list-style: none;
+      padding: 0;
+    }
+
+    /* The navigation menu */
+    .primary {
+      overflow: hidden;
+      background-color: orange;
+      width: 500px;
+    }
+
+    /* Style the subnav content - positioned absolute */
+    .secondary {
+      display: none;
+      position: absolute;
+      left: 0;
+      margin-left: 8px;
+      margin-top: 14px;
+      background-color: yellow;
+      width: 500px;
+    }
+
+    /* Navigation links */
+    .primary-item,
+    .secondary-item {
+      float: left;
+      font-size: 16px;
+      text-align: center;
+      padding: 14px 16px;
+      overflow: hidden;
+    }
+
+    /* Add a grey background color on hover */
+    .primary-item:hover,
+    .secondary-item:hover {
+      background-color: #eee;
+      /* font-weight: bold; */
+    }
+
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .primary-item:hover .secondary {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="primary">
+      <li class="primary-item">
+        <span class="label">Insights</span>
+        <ul class="secondary">
+          <li class="secondary-item">Insight 1</li>
+          <li class="secondary-item">Insight 2</li>
+          <li class="secondary-item">Insight 3</li>
+          <li class="secondary-item">Insight 4</li>
+        </ul>
+      </li>
+      <li class="primary-item">
+        <span class="label">Expertise</span>
+        <ul class="secondary">
+          <li class="secondary-item">Strategy</li>
+          <li class="secondary-item">Creative</li>
+          <li class="secondary-item">Tech</li>
+          <li class="secondary-item">Hosting</li>
+        </ul>
+      </li>
+      <li class="primary-item">
+        <span class="label">People</span>
+        <ul class="secondary">
+          <li class="secondary-item">People 1</li>
+          <li class="secondary-item">People 2</li>
+          <li class="secondary-item">People 3</li>
+          <li class="secondary-item">People 4</li>
+        </ul>
+      </li>
+      <li class="primary-item">
+        <span class="label">Careers</span>
+        <ul class="secondary">
+          <li class="secondary-item">Careers 1</li>
+          <li class="secondary-item">Careers 2</li>
+          <li class="secondary-item">Careers 3</li>
+          <li class="secondary-item">Careers 4</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>
